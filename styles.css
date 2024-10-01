@@ -111,12 +111,39 @@ footer {
   border-radius: 8px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
   text-align: center; /* Center align text */
-  position: relative; /* Position relative to place cart icon */
+  position: relative; /* Needed to position the button and icon inside the box */
 }
 
 .book-box img {
   max-width: 100%; /* Ensure images are responsive */
   height: auto; /* Maintain aspect ratio */
+}
+
+/* BUY NOW button styling */
+.book-box .buy-now {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: #ff6600;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.book-box .buy-now:hover {
+  background-color: #e65c00;
+}
+
+/* Cart icon styling */
+.book-box .cart-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #ff6600;
+  cursor: pointer;
 }
 
 .book-price {
