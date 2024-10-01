@@ -34,17 +34,20 @@ fetch(url)
         const thumbnail = book.volumeInfo.imageLinks
           ? book.volumeInfo.imageLinks.thumbnail
           : "";
+        const price = (Math.random() * 50 + 10).toFixed(2); // Random price for demonstration
 
-        // Create HTML for each book and add it to the books container
+        // Create HTML for each book, including the cart icon and price, and add it to the books container
         booksContainer.innerHTML += `
                     <div class="book-box">
                         <h3>${title}</h3>
                         <p>Author(s): ${authors}</p>
+                        <p class="book-price">$${price}</p>
                         ${
                           thumbnail
                             ? `<img src="${thumbnail}" alt="${title}">`
                             : "<p>No image available</p>"
                         }
+                        <i class="fa-solid fa-cart-shopping cart-icon"></i>
                     </div>
                 `;
       });
