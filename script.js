@@ -5,7 +5,7 @@ const apiKey = "AIzaSyADGOJhYuyNW0giKVualamYVZkT9u46PSc";
 
 // The query to search for books. You can change this to whatever topic you like
 const query =
-  "architecture|civil engineering|cyber security|computer science|information system";
+  "civil engineering|cyber security|computer science|information system|data science";
 
 // URL to fetch data from Google Books API
 const url = `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${apiKey}`;
