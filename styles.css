@@ -106,17 +106,19 @@ footer {
 }
 
 .book-box {
-  background-color: #fff; /* Background color for each book box */
-  padding: 15px; /* Padding inside each book box */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  text-align: center; /* Center align text */
-  position: relative; /* Needed to position the button and icon inside the box */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  padding-bottom: 50px; /* Add some space at the bottom for the button and icon */
 }
 
 .book-box img {
-  max-width: 100%; /* Ensure images are responsive */
-  height: auto; /* Maintain aspect ratio */
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 /* BUY NOW button styling */
